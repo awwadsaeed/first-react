@@ -1,5 +1,5 @@
 import React from 'react';
-import { renderIntoDocument } from 'react-dom/test-utils';
+
 
 class Header extends React.Component{
     render(){

@@ -7,11 +7,12 @@ class Main extends React.Component {
         return (
             <>
                 <CardColumns>
-                    {data.map((element) => {
+                    {data.map((element,index) => {
                         return <HornedBeasts
                             title={element.title}
                             src={element.image_url}
                             discreption={element.description}
+                            key={index}
                         />
                     })}
                 </CardColumns>
