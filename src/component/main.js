@@ -2,7 +2,6 @@ import React from 'react';
 import HornedBeasts from './HornedBeasts';
 // import data from './data.json'
 import { CardColumns } from 'react-bootstrap';
-import Header from './header';
 class Main extends React.Component {
     render() {
         return (

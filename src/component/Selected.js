@@ -14,9 +14,11 @@ class SelectedBeast extends React.Component{
             // onHide={handleClose}
             >
             <Modal.Header closeButton>
-              <Modal.Title>{this.props.ajga.title}</Modal.Title>
+              <Modal.Title>{this.props.element.title}</Modal.Title>
             </Modal.Header>
-            <Modal.Body><img src={this.props.ajga.image_url}/></Modal.Body>
+            <Modal.Body>
+              <img src={this.props.element.image_url} alt={this.props.element.title} className="img-fluid"/>
+              <p>{this.props.element.description}</p></Modal.Body>
             <Modal.Footer>
               <Button variant="secondary" 
               onClick={this.props.hideStuff}

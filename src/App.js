@@ -19,10 +19,9 @@ class App extends React.Component {
   }
   showStuff = (para) => {
 
-    let newElement = data.find((element) => {
-      if (element.title === para) {
-        return element;
-      }
+    let newElement = data.find(function(element){
+      if (element.title === para)
+      return element;
     })
     this.setState({
       element:newElement,
@@ -30,7 +29,7 @@ class App extends React.Component {
     })
     
   }
-  hideStuff=(para)=>{
+  hideStuff=()=>{
     this.setState({
       show:false,
     })
@@ -43,7 +42,7 @@ class App extends React.Component {
         <Header />
         <SelectedBeast
         show={this.state.show}
-        ajga={this.state.element}
+        element={this.state.element}
         hideStuff={this.hideStuff}
         />
         <Main
